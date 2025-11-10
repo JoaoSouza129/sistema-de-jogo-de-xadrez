@@ -1,7 +1,12 @@
 package org.example.xadrez;
 
+import org.example.xadrez.BoardGame.Board;
+import org.example.xadrez.Chess.ChessMatch;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        ChessMatch match=new ChessMatch();
+        UI.printBoard(match.getPieces());
+
     }
 }
